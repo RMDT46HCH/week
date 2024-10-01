@@ -1,0 +1,14 @@
+{
+    "files.associations": {
+        "stdio.h": "c",
+        "week2.h": "c",
+        "week3_task1.h": "c",
+        "week3_task4.h": "c",
+        "week3_task2.h": "c",
+        "week3_task3.h": "c",
+        "week3_run_task.h": "c",
+        "week1_2.h": "c",
+        "week1_3.h": "c",
+        "week1_4.h": "c"
+    }
+}
