@@ -67,9 +67,9 @@
 
 # scanf("%d", &i);  //&i 表示变量 i 的地址，&是取地址符
 
-## scanf("%d %d",&a,&b);
-## scanf("%d %d %d",&year,&month,&day);
-## scanf("%d",&task_flag);
+    scanf("%d %d",&a,&b);
+    scanf("%d %d %d",&year,&month,&day);
+    scanf("%d",&task_flag);
 
 # 运算符
 1. 算术运算符
@@ -118,7 +118,7 @@ a ^ b(异或)  0^0==0，0^1==1，1^1==0
 用于将值赋给变量。
 
 =：简单赋值
-+=：加法赋值   a+=b； a=a+b；
++=：加法赋值   (a+=b； a=a+b；)
 -=：减法赋值
 *=：乘法赋值
 /=：除法赋值
@@ -212,12 +212,14 @@ a++：递增 a+=1;
     }
 ## 循环语句
 ### for
-for (int i = 0; i < 5; i++) {
+    for (int i = 0; i < 5; i++) 
+    {
         printf("i = %d\n", i);
     }
 ### while
     int i = 0;
-    while (i < 5) {
+    while (i < 5) 
+    {
         printf("i = %d\n", i);
         i++;
     }
@@ -230,29 +232,29 @@ for (int i = 0; i < 5; i++) {
     } while (i < 5);
 # 函数
 ## 函数的声明（写在.h）
-int add(int a, int b);
-void big(int a, int b);
+    int add(int a, int b);
+    void big(int a, int b);
 ## 函数的调用
-int main() 
-{
-    int result = add(4, 5);  // 函数调用
-}
+    int main() 
+    {
+        int result = add(4, 5);  // 函数调用
+    }
 ## 函数的定义
-int add(int a, int b) 
-{
-    return a + b;
-}
+    int add(int a, int b) 
+    {
+        return a + b;
+    }
 
-void big(int a, int b)
-{
-    if(a>b)
-    printf("a>b");
-}
+    void big(int a, int b)
+    {
+        if(a>b)
+        printf("a>b");
+    }
 
 # 宏定义（写在.h）
 eg：
-#define PI 3.14159
-#define AREA_ROUND(R) ((R)*(R)*PI) 
+    #define PI 3.14159
+    #define AREA_ROUND(R) ((R)*(R)*PI) 
 
 # 结构体
 ## 定义（写在.h）
